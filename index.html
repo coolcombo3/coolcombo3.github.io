@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About me</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app">
+      <h1>Riley Cloutier</h1>
+      <div>
+        <h3>I like:</h3>
+        <img
+          id="ferretPic"
+          src="https://scx2.b-cdn.net/gfx/news/2018/ifbritainisc.jpg"
+          alt="Ferret"
+          height="200px"
+        />
+        <button id="bigButton">
+          Make picture BIG!
+        </button>
+        <button id="smallButton">
+          Make picture small
+        </button>
+        <button id="moveRight">
+          Move Right!
+        </button>
+        <button id="moveLeft">
+          Move Left!
+        </button>
+      </div>
+    </div>
+    <script>
+      const myPic = document.getElementById("ferretPic");
+      const bigButton = document.getElementById("bigButton");
+      const smallButton = document.getElementById("smallButton");
+      const moveRightButton = document.getElementById("moveRight");
+      const moveLeftButton = document.getElementById("moveLeft");
+
+      bigButton.addEventListener("click", function () {
+        ferretPic.height = 500;
+      });
+      smallButton.addEventListener("click", function () {
+        ferretPic.height = 200;
+      });
+      moveRightButton.addEventListener("click", function () {
+        ferretPic.style = "margin-left: 200px";
+      });
+      moveLeftButton.addEventListener("click", function () {
+        ferretPic.style = "margin-left: 0";
+      });
+    </script>
+  </body>
+</html>
