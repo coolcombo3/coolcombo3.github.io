@@ -1,5 +1,3 @@
-import "./styles.css";
-
 const ferretPic = document.getElementById("ferretPic");
 const bigButton = document.getElementById("bigButton");
 const smallButton = document.getElementById("smallButton");
